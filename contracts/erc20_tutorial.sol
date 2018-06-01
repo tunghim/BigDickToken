@@ -1,11 +1,11 @@
 pragma solidity ^0.4.18;
 
 // ----------------------------------------------------------------------------
-// '0Fucks' token contract
+// 'BigDick' token contract
 //
-// Deployed to : 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222
-// Symbol      : 0FUCKS
-// Name        : 0 Fucks Token
+// Deployed to : 0x30CCeEFa191B0D4e657E1C32588B16da32e2e69B
+// Symbol      : BGD
+// Name        : Big Dick Token
 // Total supply: 100000000
 // Decimals    : 18
 //
@@ -99,7 +99,7 @@ contract Owned {
 // ERC20 Token, with the addition of symbol, name and decimals and assisted
 // token transfers
 // ----------------------------------------------------------------------------
-contract FucksToken is ERC20Interface, Owned, SafeMath {
+contract BigDickToken is ERC20Interface, Owned, SafeMath {
     string public symbol;
     string public  name;
     uint8 public decimals;
@@ -112,13 +112,13 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     // ------------------------------------------------------------------------
     // Constructor
     // ------------------------------------------------------------------------
-    function FucksToken() public {
-        symbol = "0FUCKS";
-        name = "0 Fucks Token";
+    function BigDickToken() public {
+        symbol = "BGD";
+        name = "Big Dick Token";
         decimals = 18;
         _totalSupply = 100000000000000000000000000;
-        balances[0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222] = _totalSupply;
-        Transfer(address(0), 0x5A86f0cafD4ef3ba4f0344C138afcC84bd1ED222, _totalSupply);
+        balances[0x30CCeEFa191B0D4e657E1C32588B16da32e2e69B] = _totalSupply;
+        Transfer(address(0), 0x30CCeEFa191B0D4e657E1C32588B16da32e2e69B, _totalSupply);
     }
 
 
@@ -157,7 +157,7 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
     //
     // https://github.com/ethereum/EIPs/blob/master/EIPS/eip-20-token-standard.md
     // recommends that there are no checks for the approval double-spend attack
-    // as this should be implemented in user interfaces 
+    // as this should be implemented in user interfaces
     // ------------------------------------------------------------------------
     function approve(address spender, uint tokens) public returns (bool success) {
         allowed[msg.sender][spender] = tokens;
@@ -168,7 +168,7 @@ contract FucksToken is ERC20Interface, Owned, SafeMath {
 
     // ------------------------------------------------------------------------
     // Transfer tokens from the from account to the to account
-    // 
+    //
     // The calling account must already have sufficient tokens approve(...)-d
     // for spending from the from account and
     // - From account must have sufficient balance to transfer
